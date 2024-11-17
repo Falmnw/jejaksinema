@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.App {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #b32a28;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    opacity: 0.8;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-input,
+.form-textarea,
+.rating-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload-btn {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.file-icon {
+    font-size: 20px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #a9f5bc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #8ee6a5;
+}
+
+.rumah {
+     width: 70px;
+     height: 70px;
+}
+
+.logouser {
+    width: 70px;
+    height: 70px;
+}
+

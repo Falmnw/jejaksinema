@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class AddReview extends Model
 {
-    protected $primaryKey = 'review_id';
+    //protected $primaryKey = 'addReviewId';
+    protected $table = 'addReview';
+    protected $fillable = ['judul', 'ulasan', 'rating', 'poster'];
     use HasFactory;
 }
