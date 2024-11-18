@@ -5,14 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\AddReview;
 
-class AddReviewController extends Controller
+class addReviewController extends Controller
 {
-    /**
-     * Menyimpan review ke database.
-     */
     public function store(Request $request)
     {
-        // Validasi data input
         $validated = $request->validate([
             'judul' => 'required|string|max:255',
             'ulasan' => 'required|string',
@@ -20,10 +16,8 @@ class AddReviewController extends Controller
             'poster' => 'required|file|mimes:jpeg,png,jpg|max:2048',
         ]);
 
-        // Simpan file poster ke folder storage
         $filePath = $request->file('poster')->store('posters', 'public');
 
-        // Simpan data ke database
         AddReview::create([
             'judul' => $validated['judul'],
             'ulasan' => $validated['ulasan'],
@@ -34,4 +28,3 @@ class AddReviewController extends Controller
         return response()->json(['message' => 'Review successfully added!'], 201);
     }
 }
-
